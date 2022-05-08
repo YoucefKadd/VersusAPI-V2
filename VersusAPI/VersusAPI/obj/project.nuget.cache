@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Uy0UhX47+mZQltrbvyFKTKfu68MgjMk+SYhIGMT6a+jJdfoCApJi0VL79cREGj6gD5ABIQeXJLQx2hCieWVSJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\youcef.kaddour\\Documents\\VersusProjet\\VersusAPI-V2\\VersusAPI\\VersusAPI\\VersusAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

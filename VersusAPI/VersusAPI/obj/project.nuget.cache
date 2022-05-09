@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OOBQ2HVej2tAnDpP2BSi/pKxc3OoSHtyhcB9a2A4Uf2JYsNlIj6S/pQnRFc4RDYG9YrfJCzKJL5gZVaQkU7ItA==",
+  "dgSpecHash": "o/iqSCe9CA34GA4IXh2gXVJ46pC+sfxBjWcEQqzHejG4QBxfPxdvABsndAzLFNEH/O15XHBuMP0yK+mi9uk74A==",
   "success": true,
   "projectFilePath": "C:\\Users\\youcef.kaddour\\Documents\\VersusProjet\\VersusAPI-V2\\VersusAPI\\VersusAPI\\VersusAPI.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.4\\microsoft.entityframeworkcore.design.6.0.4.nupkg.sha512",
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.4\\microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.4\\microsoft.entityframeworkcore.sqlserver.6.0.4.nupkg.sha512",
+    "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.4\\microsoft.entityframeworkcore.tools.6.0.4.nupkg.sha512",
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\youcef.kaddour\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

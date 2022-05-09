@@ -27,7 +27,7 @@ namespace VersusAPI.Controllers
             return Ok(equipes);
         }*/
 
-        // Méthode Get permettant de récupérer les équipes dans la base de donnée
+        // Méthode GET permettant de récupérer les équipes dans la base de donnée
         [HttpGet]
         public async Task<ActionResult<List<Equipe>>> Get()
         {
@@ -45,7 +45,7 @@ namespace VersusAPI.Controllers
             return Ok(equipe);
         }*/
 
-        // Méthode permettant de récupérer une équipe spécifique avec un "ID"
+        // Méthode GET permettant de récupérer une équipe spécifique avec un "ID"
         [HttpGet("{id}")]
         public async Task<ActionResult<Equipe>> Get(int id)
         {
@@ -55,11 +55,22 @@ namespace VersusAPI.Controllers
             return Ok(equipe);
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public async Task<ActionResult<List<Equipe>>> AddEquipe(Equipe equipe)
         {
             equipes.Add(equipe);
             return Ok(equipes);
+
+        }*/
+
+        // Méhtode POST permettant d'injecter un élément à la base donnée
+        [HttpPost]
+        public async Task<ActionResult<List<Equipe>>> AddEquipe(Equipe equipe)
+        {
+            _context.Equipes.Add(equipe);
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.Equipes.ToListAsync());
 
         }
 

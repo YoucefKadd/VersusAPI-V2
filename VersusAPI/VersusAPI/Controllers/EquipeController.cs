@@ -74,7 +74,7 @@ namespace VersusAPI.Controllers
 
         }
 
-        [HttpPut]
+        /*[HttpPut]
         public async Task<ActionResult<Equipe>> Put(Equipe equipeReq)
         {
             var equipe = equipes.Find(e => e.Id == equipeReq.Id);
@@ -87,6 +87,24 @@ namespace VersusAPI.Controllers
             equipe.Color = equipeReq.Color; 
 
             return Ok(equipe);
+        }*/
+
+        // Méthode PUT permettant de modifier/mettre à jour un élément dans la base de données
+        [HttpPut]
+        public async Task<ActionResult<Equipe>> Put(Equipe equipeReq)
+        {
+            var dbEquipe = await _context.Equipes.FindAsync(equipeReq.Id);
+            if (dbEquipe == null)
+                BadRequest("Pas d'équipe trouvé");
+
+            dbEquipe.Name = equipeReq.Name;
+            dbEquipe.Abreviation = equipeReq.Abreviation;
+            dbEquipe.Pays = equipeReq.Pays;
+            dbEquipe.Color = equipeReq.Color;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(await _context.Equipes.ToListAsync());
         }
 
         [HttpDelete("{id}")]

@@ -8,12 +8,6 @@ namespace VersusAPI.Controllers
     [ApiController]
     public class EquipeController : ControllerBase
     {
-        private static List<Equipe> equipes = new List<Equipe>
-        {
-            new Equipe { Id = 1, Name = "FC Barcelone", Abreviation =   "BAR", Color = "Bleu", Pays = "Espagne"},
-            new Equipe { Id = 2, Name = "Real Madrid", Abreviation = "MAD", Color = "Balnc", Pays = "Espagne" },
-            new Equipe { Id = 3, Name = "Valence FC", Abreviation =   "VAL", Color = "Orange", Pays = "Espagne" }
-        };
         private readonly DataContext _context;
         // initialisation du contexte de base de données
         public EquipeController(DataContext context)

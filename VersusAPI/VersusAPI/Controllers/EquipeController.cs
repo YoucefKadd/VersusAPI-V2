@@ -14,6 +14,12 @@ namespace VersusAPI.Controllers
             new Equipe { Id = 2, Name = "Real Madrid", Abreviation = "MAD", Color = "Balnc", Pays = "Espagne" },
             new Equipe { Id = 3, Name = "Valence FC", Abreviation =   "VAL", Color = "Orange", Pays = "Espagne" }
         };
+        private readonly DataContext _context;
+        // initialisation du contexte de base de données
+        public EquipeController(DataContext context)
+        {
+            this._context = context;
+        }
 
         [HttpGet]
         public async Task<ActionResult<List<Equipe>>> Get()

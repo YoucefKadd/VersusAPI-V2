@@ -107,7 +107,7 @@ namespace VersusAPI.Controllers
             return Ok(await _context.Equipes.ToListAsync());
         }
 
-        [HttpDelete("{id}")]
+        /*[HttpDelete("{id}")]
         public async Task<ActionResult<List<Equipe>>> Delete(int id)
         {
             var equipe = equipes.Find(e => e.Id == id);
@@ -115,6 +115,19 @@ namespace VersusAPI.Controllers
                 BadRequest("Pas d'équipe trouvé");
             equipes.Remove(equipe);
             return Ok(equipe);
+        }*/
+
+        // Méthode DELETE permettant de supprimer un élément à partir d'un ID de la base de donnée
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Equipe>>> Delete(int id)
+        {
+            var dbEquipe = await _context.Equipes.FindAsync(id);
+            if (dbEquipe == null)
+                BadRequest("Pas d'équipe trouvé");
+
+            _context.Equipes.Remove(dbEquipe);
+            await _context.SaveChangesAsync();
+            return Ok(await _context.Equipes.ToListAsync());
         }
     }
 }

@@ -34,11 +34,23 @@ namespace VersusAPI.Controllers
             return Ok(await _context.Equipes.ToListAsync());
         }
 
-        [HttpGet("{id}")]
+
+
+        /*[HttpGet("{id}")]
         public async Task<ActionResult<Equipe>> Get(int id)
         {
             var equipe = equipes.Find(e => e.Id == id);
             if(equipe == null) 
+                BadRequest("Pas d'équipe trouvé");
+            return Ok(equipe);
+        }*/
+
+        // Méthode permettant de récupérer une équipe spécifique avec un "ID"
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Equipe>> Get(int id)
+        {
+            var equipe = await _context.Equipes.FindAsync(id);
+            if (equipe == null)
                 BadRequest("Pas d'équipe trouvé");
             return Ok(equipe);
         }

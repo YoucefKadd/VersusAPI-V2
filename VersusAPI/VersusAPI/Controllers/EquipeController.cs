@@ -21,10 +21,17 @@ namespace VersusAPI.Controllers
             this._context = context;
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public async Task<ActionResult<List<Equipe>>> Get()
         {
             return Ok(equipes);
+        }*/
+
+        // Méthode Get permettant de récupérer les équipes dans la base de donnée
+        [HttpGet]
+        public async Task<ActionResult<List<Equipe>>> Get()
+        {
+            return Ok(await _context.Equipes.ToListAsync());
         }
 
         [HttpGet("{id}")]
